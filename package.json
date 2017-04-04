@@ -7,6 +7,9 @@
   "author": "Albert Fazullin <albert.fazullin@flatstack.com>",
   "jest": {
     "verbose": true,
+    "setupFiles": [
+      "<rootDir>/__mocks__/localStorageMock.js"
+    ],
     "moduleNameMapper": {
       "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "^.+\\.(css|less|pcss)$": "identity-obj-proxy"
